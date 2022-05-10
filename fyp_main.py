@@ -9,6 +9,8 @@ Original file is located at
 
 import pandas as pd
 from fbprophet import Prophet
+import streamlit as st
+import streamlit.components.v1 as stc
 
 uploaded_file = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
 
