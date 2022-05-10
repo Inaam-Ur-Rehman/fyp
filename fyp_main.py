@@ -4,8 +4,9 @@ from fbprophet import Prophet
 import streamlit as st
 import streamlit.components.v1 as stc
 
-st.write("NIK Productions")
-st.write("Future Sales Prediction")
+st.header('NIK Productions')
+st.subheader('Future Sales Prediction')
+
 
 data_file = st.file_uploader("Upload CSV", type=["csv"])
 
