@@ -69,7 +69,7 @@ dopamine-rl==1.0.5
 earthengine-api==0.1.307
 easydict==1.9
 ecos==2.0.10
-editdistance==0.5.3
+editdistance
 en-core-web-sm 
 entrypoints==0.4
 ephem==4.1.3
