@@ -60,7 +60,7 @@ defusedxml==0.7.1
 descartes==1.1.0
 dill==0.3.4
 distributed==1.25.3
-dlib @ file:///dlib-19.18.0-cp37-cp37m-linux_x86_64.whl
+dlib 
 dm-tree==0.1.7
 docopt==0.6.2
 docutils==0.17.1
@@ -69,7 +69,7 @@ earthengine-api==0.1.307
 easydict==1.9
 ecos==2.0.10
 editdistance==0.5.3
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
+en-core-web-sm 
 entrypoints==0.4
 ephem==4.1.3
 et-xmlfile==1.1.0
@@ -110,7 +110,7 @@ google-cloud-firestore==1.7.0
 google-cloud-language==1.2.0
 google-cloud-storage==1.18.1
 google-cloud-translate==1.5.0
-google-colab @ file:///colabtools/dist/google-colab-1.0.0.tar.gz
+google-colab
 google-pasta==0.2.0
 google-resumable-media==0.4.1
 googleapis-common-protos==1.56.0
@@ -153,7 +153,7 @@ ipython-sql==0.3.9
 ipywidgets==7.7.0
 itsdangerous==1.1.0
 jax==0.3.8
-jaxlib @ https://storage.googleapis.com/jax-releases/cuda11/jaxlib-0.3.7+cuda11.cudnn805-cp37-none-manylinux2014_x86_64.whl
+jaxlib
 jedi==0.18.1
 jieba==0.42.1
 Jinja2==2.11.3
@@ -339,7 +339,7 @@ tenacity==8.0.1
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
-tensorflow @ file:///tensorflow-2.8.0-cp37-cp37m-linux_x86_64.whl
+tensorflow 
 tensorflow-datasets==4.0.1
 tensorflow-estimator==2.8.0
 tensorflow-gcs-config==2.8.0
@@ -359,11 +359,11 @@ tifffile==2021.11.2
 tinycss2==1.1.1
 tomli==2.0.1
 toolz==0.11.2
-torch @ https://download.pytorch.org/whl/cu113/torch-1.11.0%2Bcu113-cp37-cp37m-linux_x86_64.whl
-torchaudio @ https://download.pytorch.org/whl/cu113/torchaudio-0.11.0%2Bcu113-cp37-cp37m-linux_x86_64.whl
+torch
+torchaudio
 torchsummary==1.5.1
 torchtext==0.12.0
-torchvision @ https://download.pytorch.org/whl/cu113/torchvision-0.12.0%2Bcu113-cp37-cp37m-linux_x86_64.whl
+torchvision
 tornado==5.1.1
 tqdm==4.64.0
 traitlets==5.1.1
