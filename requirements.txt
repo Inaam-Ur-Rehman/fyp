@@ -1,6 +1,6 @@
 streamlit
 absl-py==1.0.0
-qt5
+PyQt5
 alabaster==0.7.12
 albumentations==0.1.12
 altair==4.2.0
