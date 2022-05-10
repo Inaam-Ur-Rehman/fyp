@@ -51,6 +51,6 @@ if data_file is not None:
     filtered_df = fcst_all.loc[(fcst_all['ds'] >= '2018-01-01') & (fcst_all['ds'] <= '2018-01-01')]
 
     filtered_df.tail()
-    st.dataframe(filtered_df)
+    st.table(filtered_df)
     filtered_df.to_csv('./finalpred.csv', index=False)
 
