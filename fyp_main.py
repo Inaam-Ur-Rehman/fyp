@@ -15,7 +15,7 @@ import streamlit.components.v1 as stc
 uploaded_file = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
 
 if uploaded_file is not None:
-    data = pd.read_csv('./train.csv')
+    data = pd.read_csv(uploaded_file)
     st.write(dataframe)
 
 
