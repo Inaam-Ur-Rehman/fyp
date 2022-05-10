@@ -13,7 +13,7 @@ import pandas as pd
 
 uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=False)
 if uploaded_files is not None:
-    df = pd.read_csv('retail_sales.csv');
+    df = pd.read_csv(uploaded_files);
 
 
 
