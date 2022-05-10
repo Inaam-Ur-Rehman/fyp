@@ -9,15 +9,14 @@ Original file is located at
 
 import streamlit as st
 import os
-
-uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=True)
-for uploaded_file in uploaded_files:
-     bytes_data = uploaded_file.read()
-     st.write("filename:", uploaded_file.name)
-     st.write(bytes_data)
 import pandas as pd
 
-df = pd.read_csv('retail_sales.csv');
+uploaded_files = st.file_uploader("Choose a CSV file", accept_multiple_files=False)
+if uploaded_files is not None:
+    df = pd.read_csv('retail_sales.csv');
+
+
+
 # df.drop(columns=['item','store'], axis=1, inplace=True)
 df.head()
 
