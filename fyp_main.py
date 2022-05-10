@@ -16,7 +16,7 @@ uploaded_file = st.file_uploader("Choose a CSV file")
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file)
-    st.write(dataframe)
+    st.write(data)
     data.head()
     # data.shape
     gData = data.groupby(['item', 'date'])['sales'].sum() #.agg(F.collect_list("SalesAmount")).sort('SalesItem')
