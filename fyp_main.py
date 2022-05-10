@@ -40,15 +40,13 @@ if data_file is not None:
         fcst['item'] = x
         fcst['Fact'] = d_df['y'].reset_index(drop=True)
         fcst_all = pd.concat((fcst_all, fcst))
+    fcst_all.tail()
 
-        fcst_all.tail()
+    fcst_all.drop(columns=['yhat_lower','yhat_upper','trend_lower','trend_upper','additive_terms','additive_terms_lower','additive_terms_upper','yearly','yearly_lower','yearly_upper','multiplicative_terms','multiplicative_terms_lower','multiplicative_terms_upper','Fact'], axis=1, inplace=True)
 
-        # fcst_all.drop(columns=['yhat_lower','yhat_upper','trend_lower','trend_upper','additive_terms','additive_terms_lower','additive_terms_upper','yearly','yearly_lower','yearly_upper','multiplicative_terms','multiplicative_terms_lower','multiplicative_terms_upper','Fact'], axis=1, inplace=True)
+    filtered_df = fcst_all.loc[(fcst_all['ds'] >= '2018-01-01') & (fcst_all['ds'] <= '2018-01-01')]
 
-        filtered_df = fcst_all.loc[(fcst_all['ds'] >= '2018-01-01')
-                                   & (fcst_all['ds'] <= '2018-01-01')]
-
-        filtered_df.tail()
-        st.dataframe(filtered_df)
-        filtered_df.to_csv('./finalpred.csv', index=False)
+    filtered_df.tail()
+    st.dataframe(filtered_df)
+    filtered_df.to_csv('./finalpred.csv', index=False)
 
