@@ -52,8 +52,8 @@ if data_file is not None:
     fcst_all.tail()
 
     fcst_all.drop(columns=['yhat_lower','yhat_upper','trend_lower','trend_upper','additive_terms','additive_terms_lower','additive_terms_upper','yearly','yearly_lower','yearly_upper','multiplicative_terms','multiplicative_terms_lower','multiplicative_terms_upper','Fact'], axis=1, inplace=True)
-
-    filtered_df = fcst_all.loc[(fcst_all['ds'] >= pd.to_datetime(d)) & (fcst_all['ds'] <= pd.to_datetime(d) )]
+     da = pd.to_datetime(d)
+    filtered_df = fcst_all.loc[(fcst_all['ds'] >= da) & (fcst_all['ds'] <= da)]
 
     filtered_df.tail()
     st.table(filtered_df)
