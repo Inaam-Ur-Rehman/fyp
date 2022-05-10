@@ -49,5 +49,6 @@ if data_file is not None:
                                    & (fcst_all['ds'] <= '2018-01-01')]
 
         filtered_df.tail()
+        st.dataframe(filtered_df)
         filtered_df.to_csv('./finalpred.csv', index=False)
 
