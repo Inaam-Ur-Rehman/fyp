@@ -11,8 +11,7 @@ st.subheader('Future Sales Prediction')
 data_file = st.file_uploader("Upload CSV", type=["csv"])
 
 d = st.date_input(
-     "Select Next Month for prediction",
-     datetime.date(2019, 7, 6))
+     "Select Next Month for prediction")
 st.write('Month is:', d)
 
 
